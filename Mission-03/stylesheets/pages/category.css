@@ -1,0 +1,258 @@
+/* 카테고리별 추천 광고상품 */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+  margin-top: 100px;
+}
+
+.sub-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.title-left {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.title-right {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-blue-600);
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.first-box {
+  display: flex;
+  flex-direction: column;
+  width: 174px;
+}
+
+.first-menu {
+  display: flex;
+  width: 1020px;
+  height: 634px;
+  border-top: 1px solid var(--color-brown-300);
+  border-bottom: 1px solid var(--color-brown-300);
+  margin-bottom: 24px;
+}
+
+.menu-box {
+  margin-top: 48px;
+  margin-left: 24px;
+  margin-bottom: 224px;
+}
+
+.first-menu-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--color-brown-300);
+  margin-bottom: 8px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.link-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-gray-700);
+  margin-right: 4px;
+}
+
+.link-img {
+  width: 6px;
+  height: 10px;
+  background-image: url(../../assets/icon/angle-right-default.svg);
+}
+
+.tag-box {
+  margin-bottom: 32px;
+  margin-left: 24px;
+}
+
+.tag-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.first-tag-box .tag {
+  background-color: white;
+  border: 1px solid var(--color-gray-400);
+  margin-top: 12px;
+  color: var(--color-brown-300);
+  display: inline-block;
+  padding: 6px 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.second-box {
+  position: relative;
+}
+
+.second-box-title {
+  flex-direction: column;
+  width: 260px;
+  height: 90px;
+  position: absolute;
+  background-color: var(--color-brown-300);
+  color: white;
+  left: 30px;
+  top: 483px;
+  text-align: center;
+}
+
+.first-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 290%;
+}
+
+.second-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.third-box {
+  width: 526px;
+  height: 631px;
+  position: relative;
+}
+
+.first-item-box {
+  display: flex;
+  margin-top: 9px;
+  margin-bottom: 16px;
+}
+
+.second-item-box {
+  display: flex;
+  margin-bottom: 9px;
+}
+
+.second-item-box::before {
+  content: "";
+  position: absolute;
+  background-color: #aaa9a9;
+  width: 100%;
+  height: 0.5px;
+  left: 0;
+  top: 310;
+}
+
+.item-img {
+  margin-bottom: 12px;
+}
+
+.item-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 12px;
+  margin-left: 4px;
+}
+
+.item-price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 4px;
+}
+
+.rocket-img {
+  margin-left: 6px;
+}
+
+.item-sub-title {
+  color: var(--color-red-500);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+}
+
+.item-box {
+  width: 160px;
+  height: 300px;
+  margin-left: 16px;
+}
+
+.second-menu {
+  display: flex;
+  width: 1020px;
+  height: 634px;
+  border-top: 1px solid var(--color-green-700);
+  border-bottom: 1px solid var(--color-green-700);
+}
+
+.second-menu-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--color-green-700);
+  margin-bottom: 8px;
+}
+
+.second-tag-box .tag {
+  background-color: white;
+  border: 1px solid var(--color-gray-400);
+  margin-top: 12px;
+  color: var(--color-green-700);
+  display: inline-block;
+  padding: 6px 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.second-box-title-02 {
+  flex-direction: column;
+  width: 260px;
+  height: 90px;
+  position: absolute;
+  background-color: var(--color-green-700);
+  color: white;
+  left: 30px;
+  top: 483px;
+  text-align: center;
+}
