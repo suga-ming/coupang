@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>헤더 - 쿠팡(Coupang)</title>
-    <link rel="icon" href="/assets/favicon/favicon.png" />
+    <link rel="icon" href="./assets/favicon/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,66 +14,92 @@
     />
     <link rel="stylesheet" href="./stylesheets/main.css" />
     <link rel="stylesheet" href="./stylesheets/pages/header.css" />
-    <script src="/js/main.js" defer></script>
+    <script src="./js/main.js" defer></script>
   </head>
 
   <body>
-    <div>
-      <ul class="login-bar">
-        <li>로그인</li>
-        <li>회원가입</li>
-        <li>고객센터</li>
-        <li>쿠팡플레이</li>
-        <li>제휴마케팅</li>
-      </ul>
-    </div>
+    <ul class="login-bar">
+      <li class="login-bar-item login">로그인</li>
+      <li class="login-bar-item">회원가입</li>
+      <li class="login-bar-item">고객센터</li>
+      <li class="login-bar-item">쿠팡플레이</li>
+      <li class="login-bar-item">제휴마케팅</li>
+    </ul>
+
     <div class="container">
       <div class="item1">
-        <button class="button--category">카테고리</button>
+        <button class="button--category">
+          <div class="button--category-img"></div>
+          <div class="button--category-text">카테고리</div>
+        </button>
       </div>
       <div class="item2">
         <h1 class="logo">
-          <a href="https://www.coupang.com/" target="_blank"> Coupang </a>
+          <a href="https://www.coupang.com/" target="_blank" rel="noopener">
+            <div class="logo-img"></div>
+            <div class="logo-title" aria-label="Coupang">Coupang</div>
+          </a>
         </h1>
       </div>
       <div class="item3">
         <form action="#" accept-charset="utf-8" name="search" method="get">
-          <select>
-            <option value="entire">전체</option>
-          </select>
-          <svg
-            width="9"
-            height="6"
-            viewBox="0 0 9 6"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M9 0H0L4.69565 6L9 0Z" fill="#767676" />
-          </svg>
-
+          <div class="select-area">
+            <select>
+              <option value="entire">
+                <div>전체</div>
+                <!-- <div class="select-img">
+                  <svg
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M9 0H0L4.69565 6L9 0Z" fill="#767676" />
+                  </svg>
+                </div> -->
+              </option>
+            </select>
+          </div>
           <input
             type="search"
             class="search-input"
             placeholder="보고싶은 상품을 검색해 보세요!"
           />
-          <button type="button" class="button-mic"></button>
-          <button type="button" class="button-search"></button>
+          <button
+            aria-label="음성 검색"
+            type="button"
+            class="button-mic"
+          ></button>
+          <button
+            aria-label="키워드 검색"
+            type="button"
+            class="button-search"
+          ></button>
         </form>
       </div>
-      <div class="item5">
-        <button type="button" class="my-coupang">마이쿠팡</button>
-        <ul class="my-coupang-list">
+      <div class="item4 my-coupang is--active">
+        <button type="button" class="my-coupang-button">
+          <div class="my-coupang-img"></div>
+          <div class="my-coupang-text">마이쿠팡</div>
+        </button>
+        <ul class="my-coupang-list disabled">
           <li class="my-coupang-li"><a href="/">주문목록</a></li>
           <li class="my-coupang-li"><a href="/">취소/반품</a></li>
           <li class="my-coupang-li"><a href="/">찜리스트</a></li>
         </ul>
       </div>
-      <div class="cart item6">
-        <button type="button" class="cart-button">장바구니</button>
+      <div class="cart item5">
+        <button type="button" class="cart-button">
+          <div class="cart-button-img"></div>
+          <div class="cart-button-text">장바구니</div>
+        </button>
         <span class="cart-num">0</span>
-        <div class="cart-message">장바구니에 담긴 상품이 없습니다.</div>
+        <!-- <div class="cart-message disabled">
+          장바구니에 담긴 상품이 없습니다.
+        </div> -->
       </div>
-      <ul class="type-navigation item4">
+      <ul class="type-navigation item6">
         <li class="type-item">
           <img class="rocket-img" src="./assets/icon/icon-rocket.svg" />로켓배송
         </li>
