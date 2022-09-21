@@ -152,6 +152,35 @@ article {
   font-size: 14px;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.indicator1 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-gray-700);
+  border-radius: 100%;
+  left: 112px;
+  top: 114px;
+}
+
+.indicator2 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-gray-600);
+  border-radius: 100%;
+  left: 133px;
+  top: 114px;
+}
+
 .third-box {
   width: 526px;
   height: 631px;

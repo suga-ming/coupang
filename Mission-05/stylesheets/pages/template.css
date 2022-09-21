@@ -33,6 +33,10 @@ nav {
   justify-content: center;
 }
 
+h2 {
+  display: none;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -90,6 +94,7 @@ ul {
 }
 
 .navigation__list_2depth {
+  visibility: hidden;
   position: absolute;
   width: 180px;
   height: 500px;
@@ -99,6 +104,7 @@ ul {
 }
 
 .navigation__list_3depth {
+  visibility: hidden;
   position: absolute;
   width: 180px;
   height: 500px;
@@ -123,6 +129,10 @@ i {
 .active:focus {
   color: var(--color-blue-600);
   font-weight: 700;
+}
+
+.is--active {
+  visibility: visible;
 }
 /* ---------------------------------------------- */
 /* 푸터                                            */
