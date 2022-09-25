@@ -18,13 +18,15 @@
   </head>
 
   <body>
-    <ul class="login-bar">
-      <li class="login-bar-item login">로그인</li>
-      <li class="login-bar-item">회원가입</li>
-      <li class="login-bar-item">고객센터</li>
-      <li class="login-bar-item">쿠팡플레이</li>
-      <li class="login-bar-item">제휴마케팅</li>
-    </ul>
+    <div class="header_area">
+      <ul class="login-bar">
+        <li class="login-bar-item">로그인</li>
+        <li class="login-bar-item">회원가입</li>
+        <li class="login-bar-item">고객센터</li>
+        <li class="login-bar-item left">쿠팡플레이</li>
+        <li class="login-bar-item left">제휴마케팅</li>
+      </ul>
+    </div>
 
     <div class="container">
       <div class="item1">
@@ -78,12 +80,12 @@
           ></button>
         </form>
       </div>
-      <div class="item4 my-coupang">
+      <div class="item4 my-coupang myCoupang">
         <button type="button" class="my-coupang-button">
           <div class="my-coupang-img"></div>
           <div class="my-coupang-text">마이쿠팡</div>
         </button>
-        <ul class="my-coupang-list disabled">
+        <ul class="my-coupang-list">
           <li class="my-coupang-li"><a href="/">주문목록</a></li>
           <li class="my-coupang-li"><a href="/">취소/반품</a></li>
           <li class="my-coupang-li"><a href="/">찜리스트</a></li>
@@ -95,9 +97,7 @@
           <div class="cart-button-text">장바구니</div>
         </button>
         <span class="cart-num">0</span>
-        <!-- <div class="cart-message disabled">
-          장바구니에 담긴 상품이 없습니다.
-        </div> -->
+        <div class="cart-message">장바구니에 담긴 상품이 없습니다.</div>
       </div>
       <ul class="type-navigation item6">
         <li class="type-item">

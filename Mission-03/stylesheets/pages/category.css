@@ -124,9 +124,13 @@ article {
 }
 
 .second-box {
+  display: flex;
+  width: 320px;
+  overflow: hidden;
+}
+.carousel {
   position: relative;
 }
-
 .second-box-title {
   flex-direction: column;
   width: 260px;
@@ -161,24 +165,27 @@ ul {
   display: none;
 }
 
-.indicator1 {
+.indicator {
   position: absolute;
+  left: 112px;
+  top: 114px;
+  display: flex;
+}
+
+.indicator1 {
+  margin: 0px 4px;
   width: 12px;
   height: 12px;
   background-color: var(--color-gray-700);
   border-radius: 100%;
-  left: 112px;
-  top: 114px;
 }
 
 .indicator2 {
-  position: absolute;
+  margin: 0px 4px;
   width: 12px;
   height: 12px;
   background-color: var(--color-gray-600);
   border-radius: 100%;
-  left: 133px;
-  top: 114px;
 }
 
 .third-box {
